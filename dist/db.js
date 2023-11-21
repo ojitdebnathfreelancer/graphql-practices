@@ -1,73 +1,38 @@
 const products = [
     {
-        product_iD: "1001",
+        product_iD: "101",
         product_name: "SmartWatch Pro",
-        category: "Wearables",
+        productCategory: 1,
         price: 199,
         quantity: 150,
     },
     {
-        product_iD: "1002",
+        product_iD: "102",
         product_name: "Wireless Earbuds",
-        category: "Audio",
+        productCategory: 2,
         price: 99,
         quantity: 300,
     },
     {
-        product_iD: "1003",
+        product_iD: "103",
         product_name: "HD Action Camera",
-        category: "Cameras",
+        productCategory: 3,
         price: 249,
         quantity: 100,
     },
     {
-        product_iD: "1004",
+        product_iD: "104",
         product_name: "Portable Bluetooth Speaker",
-        category: "Audio",
+        productCategory: 4,
         price: 79,
         quantity: 200,
     },
     {
-        product_iD: "1005",
+        product_iD: "105",
         product_name: "Gaming Mouse",
-        category: "Peripherals",
+        productCategory: 5,
         price: 49,
         quantity: 250,
-    },
-    {
-        product_iD: "1006",
-        product_name: "4K Streaming Device",
-        category: "Entertainment",
-        price: 149,
-        quantity: 180,
-    },
-    {
-        product_iD: "1007",
-        product_name: "Fitness Tracker",
-        category: "Wearables",
-        price: 129,
-        quantity: 120,
-    },
-    {
-        product_iD: "1008",
-        product_name: "Drone with HD Camera",
-        category: "Cameras",
-        price: 299,
-        quantity: 80,
-    },
-    {
-        product_iD: "1009",
-        product_name: "Smartphone Gimbal",
-        category: "Accessories",
-        price: 89,
-        quantity: 150,
-    },
-    {
-        product_iD: "1010",
-        product_name: "External SSD Drive",
-        category: "Storage",
-        price: 169,
-        quantity: 100,
     },
 ];
 const categories = [
@@ -92,4 +57,41 @@ const categories = [
         name: "Beauty & Personal Care",
     },
 ];
-export const db = { products, categories };
+const reviews = [
+    {
+        id: 1,
+        user: "Alice",
+        rating: 4.5,
+        comment: "Great service and friendly staff. The food was delicious!",
+        productId: "101",
+    },
+    {
+        id: 2,
+        user: "Bob",
+        rating: 3.2,
+        comment: "Decent place, but the wait time was longer than expected.",
+        productId: "102",
+    },
+    {
+        id: 3,
+        user: "Charlie",
+        rating: 5,
+        comment: "Absolutely fantastic experience! The ambiance and food were top-notch.",
+        productId: "103",
+    },
+    {
+        id: 4,
+        user: "Diana",
+        rating: 2.5,
+        comment: "Disappointing service. The food was average at best.",
+        productId: "104",
+    },
+    {
+        id: 5,
+        user: "Eva",
+        rating: 4.8,
+        comment: "Incredible food! The flavors were exceptional.",
+        productId: "105",
+    },
+];
+export const db = { products, categories, reviews };
